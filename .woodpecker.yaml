@@ -42,9 +42,9 @@ steps:
         echo "1b474bf207905a3cffe4e915fe36895835bc89de2620cb2ffd88ca512d9ea31b  /tmp/opengrep" | sha256sum -c
         chmod +x /tmp/opengrep
         if [ -f .opengrep.yml ]; then
-          /tmp/opengrep scan --error --metrics=off --config .opengrep.yml .
+          /tmp/opengrep scan --error --config .opengrep.yml .
         elif [ -f .opengrep.yaml ]; then
-          /tmp/opengrep scan --error --metrics=off --config .opengrep.yaml .
+          /tmp/opengrep scan --error --config .opengrep.yaml .
         else
           echo "missing .opengrep.yml" >&2
           exit 1
