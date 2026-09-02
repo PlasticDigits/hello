@@ -1,0 +1,7 @@
+# Gitleaks config for code-hello.
+# Use the default rule set unchanged.
+
+title = "code-hello"
+
+[extend]
+useDefault = true
