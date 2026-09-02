@@ -83,7 +83,7 @@ steps:
         curl -fsS -X POST \
           -H "Authorization: Bearer $COOLIFY_TOKEN" \
           -H "Content-Type: application/json" \
-          "http://10.10.0.2:8000/api/v1/deploy?uuid=$COOLIFY_APP_UUID&force=true"
+          "http://10.10.0.3:8471/deploy?uuid=$COOLIFY_APP_UUID&force=true"
 
   - name: telegram-failure
     image: appleboy/drone-telegram:1.3.0@sha256:a5198f0a17cfdef85a2b8f19d379bcbfd482db911a5c02fbc311a0067d82b3f0
